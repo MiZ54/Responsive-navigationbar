@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+body{
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(illus.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+nav{
+	height: 80px;
+	width: 100vw;
+	background: black;
+}
+.logo{
+	color: white;
+	font-size: 55px;
+	margin: 0 30px;
+	line-height: 80px;
+	font-weight: bolder;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+ul li{
+	display: inline-block;
+	margin: 0 5px;
+	line-height: 80px;
+}
+ul li a{
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 7px 14px;
+	color: white;
+	border-radius: 3px;
+}
+ul li a:hover{
+	background: #fff;
+	color: #000;
+	transition: 0.5s;
+}
+.active{
+    background: #fff;
+	color: #000;
+}
+.close,.hamburger{
+	color: #fff;
+	font-size: 30px;
+	float: right;
+	margin-right: 40px;
+	line-height: 80px;
+	cursor: pointer;
+	display: none;
+}
+#checkbox{
+	display: none;
+}
+@media(max-width: 990px){
+	.logo{
+		font-size: 40px;
+	}
+	nav li a{
+		font-size: 12px;
+		padding: 5px 10px;
+	}
+}
+@media(max-width: 830px){
+	.hamburger{
+		display: block;
+	}
+	nav ul{
+		position: fixed;
+		height: 100vh;
+		width: 60vw;
+		background: black;
+		text-align: center;
+		top: 80px;
+		right: -100vw;
+		transition: 1s;
+
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	#checkbox:checked~ul{
+		right: -30px;
+	}
+	#checkbox:checked~.hamburger{
+		display: none;
+	}
+	#checkbox:checked~.close{
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
